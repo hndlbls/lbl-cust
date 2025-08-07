@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizza la tua etichetta</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form id="customizationForm">
+    <div class="step" id="step1">
+      <h2>1) Scelta Colore Pelle</h2>
+      <div class="options">
+        <label>
+          <input type="radio" name="colorePelle" value="Nero">
+          <img src="images/pelle_nero.jpg" alt="Nero">
+          Nero
+        </label>
+        <label>
+          <input type="radio" name="colorePelle" value="Marrone">
+          <img src="images/pelle_marrone.jpg" alt="Marrone">
+          Marrone
+        </label>
+      </div>
+      <button type="button" class="next">Avanti</button>
+    </div>
+    <div class="step" id="step2" style="display:none;">
+      <h2>2) Scelta layout foratura / sistema di fissaggio</h2>
+      <div class="options">
+        <label>
+          <input type="radio" name="layoutForatura" value="ForiTondi">
+          <img src="images/fori_tondi.jpg" alt="Fori Tondi">
+          Fori Tondi
+        </label>
+        <label>
+          <input type="radio" name="layoutForatura" value="ForiQuadri">
+          <img src="images/fori_quadri.jpg" alt="Fori Quadri">
+          Fori Quadri
+        </label>
+      </div>
+      <button type="button" class="prev">Indietro</button>
+      <button type="button" class="next">Avanti</button>
+    </div>
+    <div class="step" id="step3" style="display:none;">
+      <h2>3) Scelta layout grafica</h2>
+      <div class="options">
+        <label>
+          <input type="radio" name="layoutGrafica" value="Minimal">
+          <img src="images/grafica_minimal.jpg" alt="Minimal">
+          Minimal
+        </label>
+        <label>
+          <input type="radio" name="layoutGrafica" value="Decorativo">
+          <img src="images/grafica_decorativo.jpg" alt="Decorativo">
+          Decorativo
+        </label>
+      </div>
+      <button type="button" class="prev">Indietro</button>
+      <button type="button" class="next">Avanti</button>
+    </div>
+    <div class="step" id="step4" style="display:none;">
+      <h2>4) Scelta font e icone</h2>
+      <div class="options">
+        <label>
+          <input type="radio" name="fontIcone" value="Serif">
+          <img src="images/font_serif.jpg" alt="Serif">
+          Serif
+        </label>
+        <label>
+          <input type="radio" name="fontIcone" value="SansSerif">
+          <img src="images/font_sans-serif.jpg" alt="Sans Serif">
+          Sans Serif
+        </label>
+      </div>
+      <button type="button" class="prev">Indietro</button>
+      <button type="button" class="next">Avanti</button>
+    </div>
+    <div class="step" id="step5" style="display:none;">
+      <h2>5) Inserimento nome cliente e numero ordine Etsy</h2>
+      <div class="options">
+        <label>Nome:<input type="text" name="nomeCliente" required></label>
+        <label>Numero Ordine Etsy:<input type="text" name="numeroOrdine" required></label>
+      </div>
+      <button type="button" class="prev">Indietro</button>
+      <button type="submit">Invia</button>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
