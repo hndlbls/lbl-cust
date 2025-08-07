@@ -33,12 +33,12 @@ function validateStep(step) {
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const data = new FormData(form);
-  const json = {};
-  data.forEach((value, key) => { json[key] = value; });
-  fetch('https://formspree.io/f/yourFormID', {
+  const payload = { access_key: 'YOUR_ACCESS_KEY' };  // Sostituisci con la tua API key Web3Forms
+  data.forEach((value, key) => { payload[key] = value; });
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(json)
+    body: JSON.stringify(payload)
   }).then(response => {
     if (response.ok) {
       alert('Ordine inviato con successo!');

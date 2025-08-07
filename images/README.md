@@ -1,5 +1,5 @@
 # Cartella Immagini
-Aggiungi le immagini per le opzioni in questa cartella con i seguenti nomi:
+Aggiungi qui le immagini per le opzioni con i nomi:
 - pelle_nero.jpg
 - pelle_marrone.jpg
 - fori_tondi.jpg
