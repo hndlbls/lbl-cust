@@ -33,7 +33,7 @@ function validateStep(step) {
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const data = new FormData(form);
-  const payload = { access_key: 'YOUR_ACCESS_KEY' };  // Sostituisci con la tua API key Web3Forms
+  const payload = { access_key: '8a12b0fb-3f5d-48e2-a10f-9d4d1fe7f01f' };  // Sostituisci con la tua API key Web3Forms
   data.forEach((value, key) => { payload[key] = value; });
   fetch('https://api.web3forms.com/submit', {
     method: 'POST',
